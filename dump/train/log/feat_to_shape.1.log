@@ -1,5 +1,0 @@
-# feat-to-shape.py --verbose 0 scp:dump/train/log/feats.1.scp dump/train/log/shape.1.scp 
-# Started at Thu Nov  2 09:50:35 IST 2023
-#
-# Accounting: time=0 threads=1
-# Ended (code 0) at Thu Nov  2 09:50:35 IST 2023, elapsed time 0 seconds
