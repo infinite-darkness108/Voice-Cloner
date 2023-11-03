@@ -1,0 +1,7 @@
+# compute-fbank-feats.py --fs 16000 --fmax --fmin --n_fft 1024 --n_shift 256 --win_length --window hann --n_mels 80 --write-num-frames=ark,t:exp/make_fbank/test/utt2num_frames.2 --compress=true --filetype mat --normalize 16 scp:exp/make_fbank/test/wav.2.scp ark,scp:/home/ananth/espnet/egs/Dysarthric_S2S/fbank/raw_fbank_test.2.ark,/home/ananth/espnet/egs/Dysarthric_S2S/fbank/raw_fbank_test.2.scp 
+# Started at Thu Nov  2 09:50:14 IST 2023
+#
+/home/ananth/espnet/utils/compute-fbank-feats.py:8: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.util import strtobool
+# Accounting: time=4 threads=1
+# Ended (code 0) at Thu Nov  2 09:50:18 IST 2023, elapsed time 4 seconds

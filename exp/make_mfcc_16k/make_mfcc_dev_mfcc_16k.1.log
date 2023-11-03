@@ -1,0 +1,63 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc_16k/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc_16k/wav_dev_mfcc_16k.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc_16k/utt2num_frames.1 --compress=true ark:- ark,scp:/home/ananth/espnet/egs/Dysarthric_S2S/mfcc/raw_mfcc_dev_mfcc_16k.1.ark,/home/ananth/espnet/egs/Dysarthric_S2S/mfcc/raw_mfcc_dev_mfcc_16k.1.scp 
+# Started at Thu Nov  2 10:17:32 IST 2023
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc_16k/utt2num_frames.1 --compress=true ark:- ark,scp:/home/ananth/espnet/egs/Dysarthric_S2S/mfcc/raw_mfcc_dev_mfcc_16k.1.ark,/home/ananth/espnet/egs/Dysarthric_S2S/mfcc/raw_mfcc_dev_mfcc_16k.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc_16k/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc_16k/wav_dev_mfcc_16k.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 311
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 312
+/usr/bin/sox WARN rate: rate clipped 2 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 2 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 313
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 314
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 315
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 316
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 317
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 318
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 319
+/usr/bin/sox WARN rate: rate clipped 2 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 2 samples; decrease volume?
+LOG (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 320
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 321
+/usr/bin/sox WARN rate: rate clipped 3 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 3 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 322
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 323
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 324
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 325
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 326
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 327
+/usr/bin/sox WARN rate: rate clipped 2 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 328
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 329
+LOG (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 330
+/usr/bin/sox WARN rate: rate clipped 3 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 2 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 331
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 332
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 333
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 334
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 335
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 336
+/usr/bin/sox WARN rate: rate clipped 1 samples; decrease volume?
+/usr/bin/sox WARN dither: dither clipped 1 samples; decrease volume?
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 337
+VLOG[2] (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:182) Processed features for key 338
+LOG (compute-mfcc-feats[5.5.1076~1-1b07b5]:main():compute-mfcc-feats.cc:185)  Done 28 out of 28 utterances.
+LOG (copy-feats[5.5.1076~1-1b07b5]:main():copy-feats.cc:143) Copied 28 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Nov  2 10:17:33 IST 2023, elapsed time 1 seconds

@@ -1,0 +1,227 @@
+# tts_decode.py --backend pytorch --ngpu 0 --verbose 1 --out exp/train_pytorch_train_pytorch_tacotron2+spkemb/outputs_model.last1.avg.best_decode/dev/feats.1 --json exp/train_pytorch_train_pytorch_tacotron2+spkemb/outputs_model.last1.avg.best_decode/dev/split2utt/data.1.json --model exp/train_pytorch_train_pytorch_tacotron2+spkemb/results/model.last1.avg.best --config conf/decode.yaml 
+# Started at Thu Nov  2 17:23:12 IST 2023
+#
+2023-11-02 17:23:12,585 (tts_decode:157) INFO: python path = /home/ananth/espnet/tools/RawNet/python/RawNet3:/home/ananth/espnet/tools/RawNet/python/RawNet3/models:
+2023-11-02 17:23:12,585 (tts_decode:160) INFO: backend = pytorch
+2023-11-02 17:23:18,233 (deterministic_utils:26) INFO: torch type check is disabled
+2023-11-02 17:23:18,233 (asr_utils:693) INFO: reading a config file from exp/train_pytorch_train_pytorch_tacotron2+spkemb/results/model.json
+2023-11-02 17:23:18,233 (tts:571) INFO: args: backend: pytorch
+2023-11-02 17:23:18,233 (tts:571) INFO: args: backward_window: 1
+2023-11-02 17:23:18,233 (tts:571) INFO: args: config: conf/decode.yaml
+2023-11-02 17:23:18,233 (tts:571) INFO: args: config2: None
+2023-11-02 17:23:18,233 (tts:571) INFO: args: config3: None
+2023-11-02 17:23:18,233 (tts:571) INFO: args: debugmode: 1
+2023-11-02 17:23:18,233 (tts:571) INFO: args: fastspeech_alpha: 1.0
+2023-11-02 17:23:18,233 (tts:571) INFO: args: forward_window: 3
+2023-11-02 17:23:18,233 (tts:571) INFO: args: json: exp/train_pytorch_train_pytorch_tacotron2+spkemb/outputs_model.last1.avg.best_decode/dev/split2utt/data.1.json
+2023-11-02 17:23:18,233 (tts:571) INFO: args: maxlenratio: 10.0
+2023-11-02 17:23:18,233 (tts:571) INFO: args: minlenratio: 0.0
+2023-11-02 17:23:18,233 (tts:571) INFO: args: model: exp/train_pytorch_train_pytorch_tacotron2+spkemb/results/model.last1.avg.best
+2023-11-02 17:23:18,233 (tts:571) INFO: args: model_conf: None
+2023-11-02 17:23:18,234 (tts:571) INFO: args: ngpu: 0
+2023-11-02 17:23:18,234 (tts:571) INFO: args: out: exp/train_pytorch_train_pytorch_tacotron2+spkemb/outputs_model.last1.avg.best_decode/dev/feats.1
+2023-11-02 17:23:18,234 (tts:571) INFO: args: preprocess_conf: None
+2023-11-02 17:23:18,234 (tts:571) INFO: args: save_durations: False
+2023-11-02 17:23:18,234 (tts:571) INFO: args: save_focus_rates: False
+2023-11-02 17:23:18,234 (tts:571) INFO: args: seed: 1
+2023-11-02 17:23:18,234 (tts:571) INFO: args: threshold: 0.5
+2023-11-02 17:23:18,234 (tts:571) INFO: args: use_att_constraint: False
+2023-11-02 17:23:18,234 (tts:571) INFO: args: verbose: 1
+2023-11-02 17:23:18,245 (tts:577) INFO: Tacotron2(
+  (enc): Encoder(
+    (embed): Embedding(27, 10, padding_idx=0)
+    (convs): ModuleList(
+      (0): Sequential(
+        (0): Conv1d(10, 10, kernel_size=(5,), stride=(1,), padding=(2,), bias=False)
+        (1): BatchNorm1d(10, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU()
+        (3): Dropout(p=0.5, inplace=False)
+      )
+    )
+    (blstm): LSTM(10, 5, batch_first=True, bidirectional=True)
+  )
+  (dec): Decoder(
+    (att): AttLoc(
+      (mlp_enc): Linear(in_features=522, out_features=128, bias=True)
+      (mlp_dec): Linear(in_features=10, out_features=128, bias=False)
+      (mlp_att): Linear(in_features=32, out_features=128, bias=False)
+      (loc_conv): Conv2d(1, 32, kernel_size=(1, 31), stride=(1, 1), padding=(0, 15), bias=False)
+      (gvec): Linear(in_features=128, out_features=1, bias=True)
+    )
+    (lstm): ModuleList(
+      (0): ZoneOutCell(
+        (cell): LSTMCell(532, 10)
+      )
+    )
+    (prenet): Prenet(
+      (prenet): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=80, out_features=10, bias=True)
+          (1): ReLU()
+        )
+      )
+    )
+    (postnet): Postnet(
+      (postnet): ModuleList(
+        (0): Sequential(
+          (0): Conv1d(80, 80, kernel_size=(1,), stride=(1,), bias=False)
+          (1): BatchNorm1d(80, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): Dropout(p=0.5, inplace=False)
+        )
+      )
+    )
+    (feat_out): Linear(in_features=532, out_features=160, bias=False)
+    (prob_out): Linear(in_features=532, out_features=2, bias=True)
+  )
+  (taco2_loss): Tacotron2Loss(
+    (l1_criterion): L1Loss()
+    (mse_criterion): MSELoss()
+    (bce_criterion): BCEWithLogitsLoss()
+  )
+)
+2023-11-02 17:23:18,245 (tts:580) INFO: reading model parameters from exp/train_pytorch_train_pytorch_tacotron2+spkemb/results/model.last1.avg.best
+/home/ananth/espnet/espnet/tts/pytorch_backend/tts.py:704: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:206.)
+  spemb = torch.FloatTensor(data[1][0]).to(device)
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+2023-11-02 17:23:18,260 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:18,261 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:18,876 (tts:709) INFO: inference speed = 752.8 frames / sec.
+2023-11-02 17:23:18,876 (tts:714) WARNING: output length reaches maximum length (311).
+2023-11-02 17:23:18,876 (tts:716) INFO: (1/28) 311 (size: 47->470, focus rate: 0.541)
+2023-11-02 17:23:20,807 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:20,816 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:21,345 (tts:709) INFO: inference speed = 866.6 frames / sec.
+2023-11-02 17:23:21,345 (tts:714) WARNING: output length reaches maximum length (312).
+2023-11-02 17:23:21,345 (tts:716) INFO: (2/28) 312 (size: 47->470, focus rate: 0.542)
+2023-11-02 17:23:22,260 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:22,261 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:22,615 (tts:709) INFO: inference speed = 967.7 frames / sec.
+2023-11-02 17:23:22,616 (tts:714) WARNING: output length reaches maximum length (313).
+2023-11-02 17:23:22,616 (tts:716) INFO: (3/28) 313 (size: 35->350, focus rate: 0.633)
+2023-11-02 17:23:23,782 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:23,783 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:24,088 (tts:709) INFO: inference speed = 913.4 frames / sec.
+2023-11-02 17:23:24,088 (tts:714) WARNING: output length reaches maximum length (314).
+2023-11-02 17:23:24,089 (tts:716) INFO: (4/28) 314 (size: 29->290, focus rate: 0.585)
+2023-11-02 17:23:25,350 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:25,351 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:25,738 (tts:709) INFO: inference speed = 751.9 frames / sec.
+2023-11-02 17:23:25,738 (tts:714) WARNING: output length reaches maximum length (315).
+2023-11-02 17:23:25,738 (tts:716) INFO: (5/28) 315 (size: 30->300, focus rate: 0.694)
+2023-11-02 17:23:26,652 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:26,652 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:27,078 (tts:709) INFO: inference speed = 774.2 frames / sec.
+2023-11-02 17:23:27,078 (tts:714) WARNING: output length reaches maximum length (316).
+2023-11-02 17:23:27,079 (tts:716) INFO: (6/28) 316 (size: 34->340, focus rate: 0.565)
+2023-11-02 17:23:28,109 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:28,110 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:28,472 (tts:709) INFO: inference speed = 763.7 frames / sec.
+2023-11-02 17:23:28,472 (tts:714) WARNING: output length reaches maximum length (317).
+2023-11-02 17:23:28,472 (tts:716) INFO: (7/28) 317 (size: 28->280, focus rate: 0.637)
+2023-11-02 17:23:29,458 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:29,459 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:29,794 (tts:709) INFO: inference speed = 740.5 frames / sec.
+2023-11-02 17:23:29,794 (tts:714) WARNING: output length reaches maximum length (318).
+2023-11-02 17:23:29,794 (tts:716) INFO: (8/28) 318 (size: 26->260, focus rate: 0.706)
+2023-11-02 17:23:30,662 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:30,663 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:30,989 (tts:709) INFO: inference speed = 883.5 frames / sec.
+2023-11-02 17:23:30,990 (tts:714) WARNING: output length reaches maximum length (319).
+2023-11-02 17:23:30,990 (tts:716) INFO: (9/28) 319 (size: 30->300, focus rate: 0.582)
+2023-11-02 17:23:31,916 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:31,917 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:32,300 (tts:709) INFO: inference speed = 760.2 frames / sec.
+2023-11-02 17:23:32,300 (tts:714) WARNING: output length reaches maximum length (320).
+2023-11-02 17:23:32,301 (tts:716) INFO: (10/28) 320 (size: 30->300, focus rate: 0.589)
+2023-11-02 17:23:33,257 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:33,258 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:33,652 (tts:709) INFO: inference speed = 927.1 frames / sec.
+2023-11-02 17:23:33,652 (tts:714) WARNING: output length reaches maximum length (321).
+2023-11-02 17:23:33,652 (tts:716) INFO: (11/28) 321 (size: 37->370, focus rate: 0.583)
+2023-11-02 17:23:34,677 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:34,678 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:34,980 (tts:709) INFO: inference speed = 908.5 frames / sec.
+2023-11-02 17:23:34,981 (tts:714) WARNING: output length reaches maximum length (322).
+2023-11-02 17:23:34,981 (tts:716) INFO: (12/28) 322 (size: 28->280, focus rate: 0.626)
+2023-11-02 17:23:35,974 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:35,975 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:36,506 (tts:709) INFO: inference speed = 763.6 frames / sec.
+2023-11-02 17:23:36,507 (tts:714) WARNING: output length reaches maximum length (323).
+2023-11-02 17:23:36,507 (tts:716) INFO: (13/28) 323 (size: 42->420, focus rate: 0.526)
+2023-11-02 17:23:37,906 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:37,908 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:38,717 (tts:709) INFO: inference speed = 565.6 frames / sec.
+2023-11-02 17:23:38,718 (tts:714) WARNING: output length reaches maximum length (324).
+2023-11-02 17:23:38,718 (tts:716) INFO: (14/28) 324 (size: 47->470, focus rate: 0.541)
+2023-11-02 17:23:39,798 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:39,799 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:40,163 (tts:709) INFO: inference speed = 802.7 frames / sec.
+2023-11-02 17:23:40,163 (tts:714) WARNING: output length reaches maximum length (325).
+2023-11-02 17:23:40,172 (tts:716) INFO: (15/28) 325 (size: 30->300, focus rate: 0.611)
+2023-11-02 17:23:41,173 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:41,174 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:41,756 (tts:709) INFO: inference speed = 664.1 frames / sec.
+2023-11-02 17:23:41,757 (tts:714) WARNING: output length reaches maximum length (326).
+2023-11-02 17:23:41,757 (tts:716) INFO: (16/28) 326 (size: 39->390, focus rate: 0.525)
+2023-11-02 17:23:43,229 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:43,230 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:43,645 (tts:709) INFO: inference speed = 771.8 frames / sec.
+2023-11-02 17:23:43,645 (tts:714) WARNING: output length reaches maximum length (327).
+2023-11-02 17:23:43,646 (tts:716) INFO: (17/28) 327 (size: 33->330, focus rate: 0.610)
+2023-11-02 17:23:44,885 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:44,886 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:45,319 (tts:709) INFO: inference speed = 829.1 frames / sec.
+2023-11-02 17:23:45,320 (tts:714) WARNING: output length reaches maximum length (328).
+2023-11-02 17:23:45,320 (tts:716) INFO: (18/28) 328 (size: 37->370, focus rate: 0.565)
+2023-11-02 17:23:46,621 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:46,622 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:47,052 (tts:709) INFO: inference speed = 500.1 frames / sec.
+2023-11-02 17:23:47,052 (tts:714) WARNING: output length reaches maximum length (329).
+2023-11-02 17:23:47,052 (tts:716) INFO: (19/28) 329 (size: 22->220, focus rate: 0.642)
+2023-11-02 17:23:48,084 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:48,085 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:48,770 (tts:709) INFO: inference speed = 419.4 frames / sec.
+2023-11-02 17:23:48,770 (tts:714) WARNING: output length reaches maximum length (330).
+2023-11-02 17:23:48,770 (tts:716) INFO: (20/28) 330 (size: 29->290, focus rate: 0.600)
+2023-11-02 17:23:49,764 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:49,764 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:50,080 (tts:709) INFO: inference speed = 652.9 frames / sec.
+2023-11-02 17:23:50,081 (tts:714) WARNING: output length reaches maximum length (331).
+2023-11-02 17:23:50,081 (tts:716) INFO: (21/28) 331 (size: 21->210, focus rate: 0.633)
+2023-11-02 17:23:50,786 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:50,787 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:51,088 (tts:709) INFO: inference speed = 1048.0 frames / sec.
+2023-11-02 17:23:51,089 (tts:714) WARNING: output length reaches maximum length (332).
+2023-11-02 17:23:51,089 (tts:716) INFO: (22/28) 332 (size: 32->320, focus rate: 0.616)
+2023-11-02 17:23:51,745 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:51,745 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:51,949 (tts:709) INFO: inference speed = 1545.3 frames / sec.
+2023-11-02 17:23:51,949 (tts:714) WARNING: output length reaches maximum length (333).
+2023-11-02 17:23:51,950 (tts:716) INFO: (23/28) 333 (size: 32->320, focus rate: 0.639)
+2023-11-02 17:23:52,367 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:52,368 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:52,520 (tts:709) INFO: inference speed = 1869.9 frames / sec.
+2023-11-02 17:23:52,520 (tts:714) WARNING: output length reaches maximum length (334).
+2023-11-02 17:23:52,520 (tts:716) INFO: (24/28) 334 (size: 29->290, focus rate: 0.660)
+2023-11-02 17:23:52,979 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:52,980 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:53,103 (tts:709) INFO: inference speed = 2100.1 frames / sec.
+2023-11-02 17:23:53,104 (tts:714) WARNING: output length reaches maximum length (335).
+2023-11-02 17:23:53,104 (tts:716) INFO: (25/28) 335 (size: 27->270, focus rate: 0.736)
+2023-11-02 17:23:53,557 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:53,558 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:53,700 (tts:709) INFO: inference speed = 1836.3 frames / sec.
+2023-11-02 17:23:53,701 (tts:714) WARNING: output length reaches maximum length (336).
+2023-11-02 17:23:53,701 (tts:716) INFO: (26/28) 336 (size: 27->270, focus rate: 0.632)
+2023-11-02 17:23:54,199 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:54,200 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:54,347 (tts:709) INFO: inference speed = 1846.8 frames / sec.
+2023-11-02 17:23:54,348 (tts:714) WARNING: output length reaches maximum length (337).
+2023-11-02 17:23:54,348 (tts:716) INFO: (27/28) 337 (size: 28->280, focus rate: 0.653)
+2023-11-02 17:23:54,846 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:54,847 (nets_utils:157) WARNING: Using make_pad_mask with a list of lengths is not tracable. If you try to trace this function with type(lengths) == list, please change the type of lengths to torch.LongTensor.
+2023-11-02 17:23:54,979 (tts:709) INFO: inference speed = 1846.5 frames / sec.
+2023-11-02 17:23:54,979 (tts:714) WARNING: output length reaches maximum length (338).
+2023-11-02 17:23:54,979 (tts:716) INFO: (28/28) 338 (size: 25->250, focus rate: 0.632)
+# Accounting: time=43 threads=1
+# Ended (code 0) at Thu Nov  2 17:23:55 IST 2023, elapsed time 43 seconds

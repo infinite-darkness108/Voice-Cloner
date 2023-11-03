@@ -1,0 +1,868 @@
+{
+    "utts": {
+        "339": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:4",
+                    "name": "input1",
+                    "shape": [
+                        151,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:57740",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        25,
+                        27
+                    ],
+                    "text": "etxtxeukkaali oreu puucci",
+                    "token": "e t x t x e u k k a a l i <space> o r e u <space> p u u c c i",
+                    "tokenid": "7 20 23 20 23 7 21 12 12 3 3 13 10 2 16 18 7 21 2 17 21 21 5 5 10"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "340": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:12749",
+                    "name": "input1",
+                    "shape": [
+                        159,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:59802",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        27
+                    ],
+                    "text": "maarc maadattil mahaawiir jeyanddi",
+                    "token": "m a a r c <space> m a a d a t t i l <space> m a h a a w i i r <space> j e y a n d d i",
+                    "tokenid": "14 3 3 18 5 2 14 3 3 6 3 20 20 10 13 2 14 3 9 3 3 22 10 10 18 2 11 7 24 3 15 6 6 10"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "341": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:26134",
+                    "name": "input1",
+                    "shape": [
+                        127,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:61864",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        27
+                    ],
+                    "text": "miin kanxnxeukkeu ndalladeu",
+                    "token": "m i i n <space> k a n x n x e u k k e u <space> n d a l l a d e u",
+                    "tokenid": "14 10 10 15 2 12 3 15 23 15 23 7 21 12 12 7 21 2 15 6 3 13 13 3 6 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "342": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:36959",
+                    "name": "input1",
+                    "shape": [
+                        83,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:63926",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        29,
+                        27
+                    ],
+                    "text": "muulxai illaadawan mutxtxaalx",
+                    "token": "m u u l x a i <space> i l l a a d a w a n <space> m u t x t x a a l x",
+                    "tokenid": "14 21 21 13 23 3 10 2 10 13 13 3 3 6 3 22 3 15 2 14 21 20 23 20 23 3 3 13 23"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "343": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:44264",
+                    "name": "input1",
+                    "shape": [
+                        173,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:65988",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        27
+                    ],
+                    "text": "tozhilil muuladanam poodxa weenxdxum",
+                    "token": "t o z h i l i l <space> m u u l a d a n a m <space> p o o d x a <space> w e e n x d x u m",
+                    "tokenid": "20 16 25 9 10 13 10 13 2 14 21 21 13 3 6 3 15 3 14 2 17 16 16 6 23 3 2 22 7 7 15 23 6 23 21 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "344": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:58769",
+                    "name": "input1",
+                    "shape": [
+                        82,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:68050",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        27
+                    ],
+                    "text": "meejai meel eerxi ndil",
+                    "token": "m e e j a i <space> m e e l <space> e e r x i <space> n d i l",
+                    "tokenid": "14 7 7 11 3 10 2 14 7 7 13 2 7 7 18 23 10 2 15 6 10 13"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "345": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:65994",
+                    "name": "input1",
+                    "shape": [
+                        92,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:70112",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        27
+                    ],
+                    "text": "indda maiyanggalx enggeu ulxlxadeu",
+                    "token": "i n d d a <space> m a i y a n g g a l x <space> e n g g e u <space> u l x l x a d e u",
+                    "tokenid": "10 15 6 6 3 2 14 3 10 24 3 15 8 8 3 13 23 2 7 15 8 8 7 21 2 21 13 23 13 23 3 6 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "346": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:74019",
+                    "name": "input1",
+                    "shape": [
+                        164,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:72174",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        27
+                    ],
+                    "text": "makkalx raajjiyam weenxdxum",
+                    "token": "m a k k a l x <space> r a a j j i y a m <space> w e e n x d x u m",
+                    "tokenid": "14 3 12 12 3 13 23 2 18 3 3 11 11 10 24 3 14 2 22 7 7 15 23 6 23 21 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "347": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:87804",
+                    "name": "input1",
+                    "shape": [
+                        93,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:74236",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        27
+                    ],
+                    "text": "risxikkeu roosxam adigam",
+                    "token": "r i s x i k k e u <space> r o o s x a m <space> a d i g a m",
+                    "tokenid": "18 10 19 23 10 12 12 7 21 2 18 16 16 19 23 3 14 2 3 6 10 8 3 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "348": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:95909",
+                    "name": "input1",
+                    "shape": [
+                        195,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:76298",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        21,
+                        27
+                    ],
+                    "text": "lajjai enrxaal wekkam",
+                    "token": "l a j j a i <space> e n r x a a l <space> w e k k a m",
+                    "tokenid": "13 3 11 11 3 10 2 7 15 18 23 3 3 13 2 22 7 12 12 3 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "349": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:112174",
+                    "name": "input1",
+                    "shape": [
+                        117,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:78360",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        29,
+                        27
+                    ],
+                    "text": "tuukkam udxaleukkeu ndalladeu",
+                    "token": "t u u k k a m <space> u d x a l e u k k e u <space> n d a l l a d e u",
+                    "tokenid": "20 21 21 12 12 3 14 2 21 6 23 3 13 7 21 12 12 7 21 2 15 6 3 13 13 3 6 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "350": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:122199",
+                    "name": "input1",
+                    "shape": [
+                        175,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:80422",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        35,
+                        27
+                    ],
+                    "text": "laksxmi muga laksxanxam ulxlxa penx",
+                    "token": "l a k s x m i <space> m u g a <space> l a k s x a n x a m <space> u l x l x a <space> p e n x",
+                    "tokenid": "13 3 12 19 23 14 10 2 14 21 8 3 2 13 3 12 19 23 3 15 23 3 14 2 21 13 23 13 23 3 2 17 7 15 23"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "351": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:136864",
+                    "name": "input1",
+                    "shape": [
+                        93,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:82484",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        27
+                    ],
+                    "text": "widxaa muyarxci walxarcci tarum",
+                    "token": "w i d x a a <space> m u y a r x c i <space> w a l x a r c c i <space> t a r u m",
+                    "tokenid": "22 10 6 23 3 3 2 14 21 24 3 18 23 5 10 2 22 3 13 23 3 18 5 5 10 2 20 3 18 21 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "352": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:144969",
+                    "name": "input1",
+                    "shape": [
+                        108,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:84546",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        27
+                    ],
+                    "text": "wiitxtxil wiseesxam unxdxeu",
+                    "token": "w i i t x t x i l <space> w i s e e s x a m <space> u n x d x e u",
+                    "tokenid": "22 10 10 20 23 20 23 10 13 2 22 10 19 7 7 19 23 3 14 2 21 15 23 6 23 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "353": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:154274",
+                    "name": "input1",
+                    "shape": [
+                        105,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:86608",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        27
+                    ],
+                    "text": "wandda wisxayattaik kuurxeu",
+                    "token": "w a n d d a <space> w i s x a y a t t a i k <space> k u u r x e u",
+                    "tokenid": "22 3 15 6 6 3 2 22 10 19 23 3 24 3 20 20 3 10 12 2 12 21 21 18 23 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "354": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:163339",
+                    "name": "input1",
+                    "shape": [
+                        144,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:88670",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        37,
+                        27
+                    ],
+                    "text": "en wiidi wazhiyaaga sellum peerunddeu",
+                    "token": "e n <space> w i i d i <space> w a z h i y a a g a <space> s e l l u m <space> p e e r u n d d e u",
+                    "tokenid": "7 15 2 22 10 10 6 10 2 22 3 25 9 10 24 3 3 8 3 2 19 7 13 13 21 14 2 17 7 7 18 21 15 6 6 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "355": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:175524",
+                    "name": "input1",
+                    "shape": [
+                        138,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:90732",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        28,
+                        27
+                    ],
+                    "text": "jadxai pinni weesxam poodxeu",
+                    "token": "j a d x a i <space> p i n n i <space> w e e s x a m <space> p o o d x e u",
+                    "tokenid": "11 3 6 23 3 10 2 17 10 15 15 10 2 22 7 7 19 23 3 14 2 17 16 16 6 23 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "356": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:187229",
+                    "name": "input1",
+                    "shape": [
+                        111,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:92794",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        21,
+                        27
+                    ],
+                    "text": "janawari mudal maadam",
+                    "token": "j a n a w a r i <space> m u d a l <space> m a a d a m",
+                    "tokenid": "11 3 15 3 22 3 18 10 2 14 21 6 3 13 2 14 3 3 6 3 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "357": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:196774",
+                    "name": "input1",
+                    "shape": [
+                        167,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:94856",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        18,
+                        27
+                    ],
+                    "text": "janamee ndam balam",
+                    "token": "j a n a m e e <space> n d a m <space> b a l a m",
+                    "tokenid": "11 3 15 3 14 7 7 2 15 6 3 14 2 4 3 13 3 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "358": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:210799",
+                    "name": "input1",
+                    "shape": [
+                        201,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:96918",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        27
+                    ],
+                    "text": "jaadi illaiyadxi paappaa",
+                    "token": "j a a d i <space> i l l a i y a d x i <space> p a a p p a a",
+                    "tokenid": "11 3 3 6 10 2 10 13 13 3 10 24 3 6 23 10 2 17 3 3 17 17 3 3"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "359": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:227544",
+                    "name": "input1",
+                    "shape": [
+                        175,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:98980",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        29,
+                        27
+                    ],
+                    "text": "waay jaalam kaatxtxum manidan",
+                    "token": "w a a y <space> j a a l a m <space> k a a t x t x u m <space> m a n i d a n",
+                    "tokenid": "22 3 3 24 2 11 3 3 13 3 14 2 12 3 3 20 23 20 23 21 14 2 14 3 15 10 6 3 15"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "360": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:242209",
+                    "name": "input1",
+                    "shape": [
+                        88,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:101042",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        25,
+                        27
+                    ],
+                    "text": "jaalraa poodxa weenxdxaam",
+                    "token": "j a a l r a a <space> p o o d x a <space> w e e n x d x a a m",
+                    "tokenid": "11 3 3 13 18 3 3 2 17 16 16 6 23 3 2 22 7 7 15 23 6 23 3 3 14"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "361": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:249914",
+                    "name": "input1",
+                    "shape": [
+                        93,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:103104",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        27
+                    ],
+                    "text": "ajiiranxak koolxaarxeu",
+                    "token": "a j i i r a n x a k <space> k o o l x a a r x e u",
+                    "tokenid": "3 11 10 10 18 3 15 23 3 12 2 12 16 16 13 23 3 3 18 23 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "362": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:258019",
+                    "name": "input1",
+                    "shape": [
+                        101,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:105166",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        27
+                    ],
+                    "text": "aktxoobar iranxdxeu gaanddi jeyanddi",
+                    "token": "a k t x o o b a r <space> i r a n x d x e u <space> g a a n d d i <space> j e y a n d d i",
+                    "tokenid": "3 12 20 23 16 16 4 3 18 2 10 18 3 15 23 6 23 7 21 2 8 3 3 15 6 6 10 2 11 7 24 3 15 6 6 10"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "363": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:266764",
+                    "name": "input1",
+                    "shape": [
+                        151,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:107228",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        32,
+                        27
+                    ],
+                    "text": "ndiinggalx sxeemamaaga irunggalx",
+                    "token": "n d i i n g g a l x <space> s x e e m a m a a g a <space> i r u n g g a l x",
+                    "tokenid": "15 6 10 10 15 8 8 3 13 23 2 19 23 7 7 14 3 14 3 3 8 3 2 10 18 21 15 8 8 3 13 23"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "364": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:279509",
+                    "name": "input1",
+                    "shape": [
+                        99,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:109290",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        27
+                    ],
+                    "text": "togudi hetx sanddippeu",
+                    "token": "t o g u d i <space> h e t x <space> s a n d d i p p e u",
+                    "tokenid": "20 16 8 21 6 10 2 9 7 20 23 2 19 3 15 6 6 10 17 17 7 21"
+                }
+            ],
+            "utt2spk": "FSI"
+        },
+        "365": {
+            "input": [
+                {
+                    "feat": "/home/ananth/espnet/egs/Dysarthric_S2S/dump/dev/feats.2.ark:288094",
+                    "name": "input1",
+                    "shape": [
+                        73,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_dev/xvector.1.ark:111352",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        41,
+                        27
+                    ],
+                    "text": "winjnjaana walxarcci ndaatxtxeu walxarcci",
+                    "token": "w i n j n j a a n a <space> w a l x a r c c i <space> n d a a t x t x e u <space> w a l x a r c c i",
+                    "tokenid": "22 10 15 11 15 11 3 3 15 3 2 22 3 13 23 3 18 5 5 10 2 15 6 3 3 20 23 20 23 7 21 2 22 3 13 23 3 18 5 5 10"
+                }
+            ],
+            "utt2spk": "FSI"
+        }
+    }
+}

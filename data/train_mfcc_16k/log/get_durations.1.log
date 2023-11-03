@@ -1,0 +1,72 @@
+# wav-to-duration --read-entire-file=false scp:data/train_mfcc_16k/split4utt/1/wav.scp ark,t:data/train_mfcc_16k/split4utt/1/utt2dur 
+# Started at Thu Nov  2 10:17:29 IST 2023
+#
+wav-to-duration --read-entire-file=false scp:data/train_mfcc_16k/split4utt/1/wav.scp ark,t:data/train_mfcc_16k/split4utt/1/utt2dur 
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 150638 bytes in RIFF chunk, but after first data block there will be 36 + 149504 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 100462 bytes in RIFF chunk, but after first data block there will be 36 + 99328 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 131182 bytes in RIFF chunk, but after first data block there will be 36 + 130048 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 99438 bytes in RIFF chunk, but after first data block there will be 36 + 98304 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 25710 bytes in RIFF chunk, but after first data block there will be 36 + 24576 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 26734 bytes in RIFF chunk, but after first data block there will be 36 + 25600 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 29806 bytes in RIFF chunk, but after first data block there will be 36 + 28672 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 116846 bytes in RIFF chunk, but after first data block there will be 36 + 115712 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 102510 bytes in RIFF chunk, but after first data block there will be 36 + 101376 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 77940 bytes in RIFF chunk, but after first data block there will be 36 + 76800 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 77940 bytes in RIFF chunk, but after first data block there will be 36 + 76800 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 131188 bytes in RIFF chunk, but after first data block there will be 36 + 130048 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 24692 bytes in RIFF chunk, but after first data block there will be 36 + 23552 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 92276 bytes in RIFF chunk, but after first data block there will be 36 + 91136 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 28788 bytes in RIFF chunk, but after first data block there will be 36 + 27648 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 104564 bytes in RIFF chunk, but after first data block there will be 36 + 103424 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 196724 bytes in RIFF chunk, but after first data block there will be 36 + 195584 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 26740 bytes in RIFF chunk, but after first data block there will be 36 + 25600 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 107636 bytes in RIFF chunk, but after first data block there will be 36 + 106496 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 108660 bytes in RIFF chunk, but after first data block there will be 36 + 107520 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 89204 bytes in RIFF chunk, but after first data block there will be 36 + 88064 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 20596 bytes in RIFF chunk, but after first data block there will be 36 + 19456 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 67700 bytes in RIFF chunk, but after first data block there will be 36 + 66560 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 90228 bytes in RIFF chunk, but after first data block there will be 36 + 89088 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 90228 bytes in RIFF chunk, but after first data block there will be 36 + 89088 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 16500 bytes in RIFF chunk, but after first data block there will be 36 + 15360 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 107636 bytes in RIFF chunk, but after first data block there will be 36 + 106496 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 104564 bytes in RIFF chunk, but after first data block there will be 36 + 103424 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 24692 bytes in RIFF chunk, but after first data block there will be 36 + 23552 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 91252 bytes in RIFF chunk, but after first data block there will be 36 + 90112 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 26740 bytes in RIFF chunk, but after first data block there will be 36 + 25600 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 25716 bytes in RIFF chunk, but after first data block there will be 36 + 24576 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 23668 bytes in RIFF chunk, but after first data block there will be 36 + 22528 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 130164 bytes in RIFF chunk, but after first data block there will be 36 + 129024 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 29812 bytes in RIFF chunk, but after first data block there will be 36 + 28672 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 115828 bytes in RIFF chunk, but after first data block there will be 36 + 114688 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 28788 bytes in RIFF chunk, but after first data block there will be 36 + 27648 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 32884 bytes in RIFF chunk, but after first data block there will be 36 + 31744 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 107636 bytes in RIFF chunk, but after first data block there will be 36 + 106496 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 23668 bytes in RIFF chunk, but after first data block there will be 36 + 22528 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 23668 bytes in RIFF chunk, but after first data block there will be 36 + 22528 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 18548 bytes in RIFF chunk, but after first data block there will be 36 + 17408 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 118900 bytes in RIFF chunk, but after first data block there will be 36 + 117760 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 96372 bytes in RIFF chunk, but after first data block there will be 36 + 95232 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 90228 bytes in RIFF chunk, but after first data block there will be 36 + 89088 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 83060 bytes in RIFF chunk, but after first data block there will be 36 + 81920 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 28788 bytes in RIFF chunk, but after first data block there will be 36 + 27648 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 116852 bytes in RIFF chunk, but after first data block there will be 36 + 115712 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 132212 bytes in RIFF chunk, but after first data block there will be 36 + 131072 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 33908 bytes in RIFF chunk, but after first data block there will be 36 + 32768 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 89204 bytes in RIFF chunk, but after first data block there will be 36 + 88064 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 107636 bytes in RIFF chunk, but after first data block there will be 36 + 106496 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 89204 bytes in RIFF chunk, but after first data block there will be 36 + 88064 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 101492 bytes in RIFF chunk, but after first data block there will be 36 + 100352 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 95348 bytes in RIFF chunk, but after first data block there will be 36 + 94208 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 114804 bytes in RIFF chunk, but after first data block there will be 36 + 113664 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 24692 bytes in RIFF chunk, but after first data block there will be 36 + 23552 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 171124 bytes in RIFF chunk, but after first data block there will be 36 + 169984 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 16500 bytes in RIFF chunk, but after first data block there will be 36 + 15360 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 44148 bytes in RIFF chunk, but after first data block there will be 36 + 43008 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 25716 bytes in RIFF chunk, but after first data block there will be 36 + 24576 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 83060 bytes in RIFF chunk, but after first data block there will be 36 + 81920 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 108660 bytes in RIFF chunk, but after first data block there will be 36 + 107520 bytes (we do not support reading multiple data chunks).
+WARNING (wav-to-duration[5.5.1076~1-1b07b5]:Read():wave-reader.cc:260) Expected 28788 bytes in RIFF chunk, but after first data block there will be 36 + 27648 bytes (we do not support reading multiple data chunks).
+LOG (wav-to-duration[5.5.1076~1-1b07b5]:main():wav-to-duration.cc:92) Printed duration for 64 audio files.
+LOG (wav-to-duration[5.5.1076~1-1b07b5]:main():wav-to-duration.cc:94) Mean duration was 1.69288, min and max durations were 0.348299, 4.43501
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Nov  2 10:17:29 IST 2023, elapsed time 0 seconds
