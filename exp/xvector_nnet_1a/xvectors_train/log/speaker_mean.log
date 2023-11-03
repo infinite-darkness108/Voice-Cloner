@@ -1,8 +1,0 @@
-# ivector-mean ark:data/train_mfcc_16k/spk2utt scp:exp/xvector_nnet_1a/xvectors_train/xvector.scp ark,scp:exp/xvector_nnet_1a/xvectors_train/spk_xvector.ark,exp/xvector_nnet_1a/xvectors_train/spk_xvector.scp ark,t:exp/xvector_nnet_1a/xvectors_train/num_utts.ark 
-# Started at Thu Nov  2 10:18:21 IST 2023
-#
-ivector-mean ark:data/train_mfcc_16k/spk2utt scp:exp/xvector_nnet_1a/xvectors_train/xvector.scp ark,scp:exp/xvector_nnet_1a/xvectors_train/spk_xvector.ark,exp/xvector_nnet_1a/xvectors_train/spk_xvector.scp ark,t:exp/xvector_nnet_1a/xvectors_train/num_utts.ark 
-LOG (ivector-mean[5.5.1076~1-1b07b5]:main():ivector-mean.cc:134) Computed mean of 1 speakers (0 with no utterances), consisting of 255 utterances (0 absent from input).
-LOG (ivector-mean[5.5.1076~1-1b07b5]:main():ivector-mean.cc:145) Norm of mean of speakers is 51.1803, root-mean-square speaker-iVector length divided by sqrt(dim) is 2.26187
-# Accounting: time=0 threads=1
-# Ended (code 0) at Thu Nov  2 10:18:21 IST 2023, elapsed time 0 seconds
